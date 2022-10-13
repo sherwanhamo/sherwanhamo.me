@@ -64,8 +64,6 @@ body{
 /*This is for debugging, to know where the columns are*/
 .container div{
     padding:10px;
-    
-    
 }
 
 /* CONTENT COLUMN > INTRODUCTION < */
@@ -153,3 +151,5 @@ h2.otherh2{
 .languageslist > li{
     margin-bottom:16px;
 }
+@media(min-width:400px ){.container{ grid-template-columns:repeat(1, 1fr); } }
+@media(min-width:700px ){.container{ grid-template-columns:repeat(2, 1fr); } }
