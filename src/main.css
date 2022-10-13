@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    background-color:#31363E;
+}
+
+/*Making sure we use all the space in the site*/
+.container{
+    width:100vw;
+    height:100vh;
+
+/* fluid width. or fluid padding on the side */
+ /*   margin:10vw;
+  /*  padding:10vw;
+    
+/*This is the font settings*/
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    
+/*This is the grid system settings*/    
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:250px 100px 100px 100px;
+    gap:0px 78px;
+    padding:78px;
+    
+}
+/* CONTENT COLUMNS */
+.introduction{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.myskills{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.other{
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.socialmedia{
+    grid-column-start:1;
+    grid-column-end:1;
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+.languages{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:5;
+}
+
+
+/*This is for debugging, to know where the columns are*/
+.container div{
+    padding:10px;
+    
+    
+}
+
+/* CONTENT COLUMN > INTRODUCTION < */
+p.hi{
+    color: white;
+    text-weight: bold;
+}
+
+h2.myname{
+    color:white;
+}
+
+p.aboutme{
+    color:white;
+}
+
+a.more{
+    text-decoration:none;
+    color:#FFB84F;
+}
+
+/* CONTENT COLUMN > MY SKILLS < */
+h2.skillsh2{
+    color:white;
+    margin-bottom:30px;
+}
+
+.skillslist{
+    padding:16px;
+    color:white;
+
+}
+
+.skillslist > li{
+    margin-bottom:16px;
+}
+
+*.skillslist > li > p{
+    color:white;
+    text-decoration:none;
+}
+
+/* CONTENT COLUMN > OTHER < */
+h2.otherh2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.otherlist{
+    padding:0;
+    list-style-type:none;
+}
+
+.otherlist > li{
+    margin-bottom:18px;
+}
+
+.otherlist > li > a{
+    color:#FFB84F;
+    text-decoration:none;
+}
+/* CONTENT COLUMN > SOCIALMEDIA < */
+
+/* Listing items in horizontal with margin */
+.SMicons{
+    padding:0;
+    list-style-type: none;
+}
+.SMicons > li{
+    display: inline-block;
+    margin-right:16px;
+}
+
+/* CONTENT COLUMN > LANGUEGES < */
+.languagesh2{
+    color:white;
+    margin-bottom:30px;
+}
+
+.languageslist{
+    padding:16px;
+    color:white;
+}
+
+.languageslist > li{
+    margin-bottom:16px;
+}
