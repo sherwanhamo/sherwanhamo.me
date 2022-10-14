@@ -36,12 +36,12 @@ body{
 /* CONTENT COLUMN > PARAGRAPH < */
 .title{
     color: white;
-    font-size: 36px;
+   
     text-weight: bold;
 }
 .date{
     color: grey;
-    font-size: 16px;
+  
     text-weight: bold;
 }
 .p{
