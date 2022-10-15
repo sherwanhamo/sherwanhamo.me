@@ -12,7 +12,7 @@ body{
     grid-template-columns:repeat(1, 1fr);
     grid-template-rows:240px 250px 150px 90px;
     gap:0px 78px;
-} 
+
 /* CONTENT COLUMN > INTRODUCTION < */
 .hi-p{
     color: white;
@@ -32,17 +32,17 @@ body{
 /* CONTENT COLUMN > MY SKILLS < */
 .myskills-h2{
     color:white;
-    margin-bottom:0px;
+    margin-bottom:32px;
 }
 .skillslist-ul{
-    padding:16px;
+    padding-left:16px;
     color:white;
 }
 /* CONTENT COLUMN > MY SKILLS < */
 /* CONTENT COLUMN > WRITTING & OTHER < */
 .other-h2{
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 32px;
 }
 .otherlist-ul{
     padding:0;
@@ -70,11 +70,11 @@ body{
 /* CONTENT COLUMN > LANGUAGES < */
 .languages-h2{
     color:white;
-    margin-bottom:30px;
+    margin-bottom:32px;
 }
 
 .languageslist{
-    padding:16px;
+    padding-left:16px;
     color:white;
 }
 
