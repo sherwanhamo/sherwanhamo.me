@@ -13,9 +13,6 @@ body{
     grid-auto-rows: max-content;
     gap:0px 78px;
 } 
-.container > div{
-    border: 1px solid white;
-}
 /* CONTENT COLUMN > INTRODUCTION < */
 .hi-p{
     color: white;
