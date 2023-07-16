@@ -120,7 +120,7 @@ footer{
 
 /* microinteractions */
 
-na ul li a:hover:before{
+nav ul li a:hover:before{
 				width: 35%;
 }
 

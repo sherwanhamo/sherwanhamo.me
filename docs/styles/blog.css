@@ -60,6 +60,7 @@ nav ul li a:before{
     height: 1px;
     border-bottom: 2px solid gray;
     bottom: -6px;
+    transition: width .3s;
 }
 
 section h3{
@@ -88,6 +89,6 @@ footer{
 
 /* microinteractions */
 
-na ul li a:hover:before{
+nav ul li a:hover:before{
 				width: 35%;
 }
