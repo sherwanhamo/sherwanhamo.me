@@ -1,0 +1,169 @@
+:root {
+				--primary-color: #007AF3;
+}
+
+
+body {
+				
+				margin: 1.5em;
+				font-family: 'Poppins';
+}
+
+.container{
+/*  border: 2px solid red; */
+}
+
+/* header style */
+header {
+				background: white;
+		
+				display: flex;
+				justify-content: space-between;
+}
+
+.logo {
+				text-decoration: none;
+				font-weight: bold;
+				color: black;
+				font-size: 1.2em;
+}
+
+span {
+				color: var(--primary-color);
+}
+
+nav {
+			display: none;   
+}
+
+.mobile-menu {
+				cursor: pointer;
+}
+
+/* nav style */
+nav.menu-btn {
+				display: block;
+}
+
+nav {
+				position: fixed;
+				z-index: 999;
+				width: 50%;
+				right: 0;
+				top: 0;
+				background: #20272E;				
+				height: 100vh;
+				padding: 1em;
+}
+
+nav ul {
+				margin-top: 6em;
+				list-style-type: none;
+}
+
+nav ul li a {
+				color: white;
+				text-decoration: none;
+				display: block;
+				padding: .7em;
+				font-size: 1.3em;
+				text-align: right;
+}
+
+nav ul li a:hover {
+				background: #2F3A44;
+}
+
+.mobile-menu-exit {
+				float: right;
+				margin: .5em;
+				cursor: pointer;
+}
+/* nav style */
+/* header style */
+
+/* main style */
+section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+section h1{
+				
+				font-family: 'Playfair Display';
+				font-size: 1.8rem;
+				font-weight: normal;
+}
+
+section .date{
+    font-size: 0.8rem;
+    line-height: 165%;
+    inline-size: 85%;
+}
+section p{
+    font-size: 1rem;
+    line-height: 165%;
+    inline-size: 85%;
+    overflow-wrap: break-word;
+}
+/* main style */
+
+/* footer style */
+footer{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+/* footer style */
+@media only screen and (min-width: 768px) {
+
+				.mobile-menu, .mobile-menu-exit {
+								display: none;
+				}
+				
+				header {
+								display: grid;
+								grid-template-columns: 180px auto;
+				}
+				
+				nav {
+								display: flex;
+								justify-content: space-between;
+								background: none;
+								position: unset;
+								height: auto;
+								width: 100%;
+								padding: 0;
+				}
+				
+				nav ul {
+								display: flex;
+								margin: 0;
+				}
+				
+				nav ul li a {
+								color: black;
+								font-size: 1em;
+								padding: .1em 1em;
+				}
+				
+				nav ul li a:hover {
+				background: none;
+				text-decoration: underline;
+				}
+				
+				body {
+				margin: 1.5em 5em;
+				font-family: 'Poppins';
+				}
+}
+
+@media only screen and (min-width: 1200px) {
+
+				.container {
+								width: 1200px;
+								margin: 0 auto;
+				}
+}
+
+
