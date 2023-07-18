@@ -105,6 +105,7 @@ main p{
 /* section style */
 section{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 5em;
 
@@ -123,13 +124,6 @@ section div ul li {
     inline-size: 85%;
 }
 
-section .skills-col {
-				flex: 1;
-}
-
-section .languages-col{
-    flex: 1;
-}
 /* section style */
 
 /* footer style */
