@@ -1,87 +1,79 @@
 :root {
-				--primary-color: #007AF3;
+				--primary-color: #0d6efd;
 }
 
 
 body {
-				
 				margin: 1.5em;
 				font-family: 'Poppins';
 }
 
-.container{
-/*  border: 2px solid red; */
+/* ¿header¿ */
+.logo {
+				color: black;
+				font-weight: bold;
+}
+.logo span {
+			color: var(--primary-color);
 }
 
-/* header style */
+a {
+				text-decoration: none;
+				font-size: 1.3rem;
+}
+
 header {
-		
 				display: flex;
 				justify-content: space-between;
-}
-
-.logo {
-				text-decoration: none;
-				font-weight: bold;
-				color: black;
-				font-size: 1.2em;
-}
-
-span {
-				color: var(--primary-color);
-}
-
-nav {
-			display: none;   
-}
-
-.mobile-menu {
-				cursor: pointer;
-}
-
-/* nav style */
-nav.menu-btn {
-				display: block;
+				align-items: center;
 }
 
 nav {
 				position: fixed;
-				z-index: 999;
-				width: 50%;
 				right: 0;
 				top: 0;
-				background: #20272E;				
+				background: #20272E;
 				height: 100vh;
-				padding: 1em;
+				width: 50%;
+				z-index: 999;
+				text-transform: uppercase;
+				transform: translateX(100%);
+				transition: transform .5s ease-in-out;
 }
 
 nav ul {
-				margin-top: 6em;
 				list-style-type: none;
+				padding: 0;
+				margin-top: 8em;
 }
 
 nav ul li a {
 				color: white;
-				text-decoration: none;
+				padding: .8em 2em;
 				display: block;
-				padding: .7em;
-				font-size: 1.3em;
-				text-align: right;
 }
 
-nav ul li a:hover {
-				background: #2F3A44;
+nav ul li a:hover{
+				background: var(--primary-color);;
 }
 
-.mobile-menu-exit {
+.close {
 				float: right;
-				margin: .5em;
-				cursor: pointer;
+				margin: 2em;
 }
-/* nav style */
-/* header style */
 
-/* main style */
+header .menu {
+							width: 3em;
+}
+			
+.open-nav {
+				transform: translateX(0);
+}
+
+/* ?header? */
+
+/* ¿main¿ */
+
 main{
     margin-top: 5em;
     margin-bottom: 5em;
@@ -100,12 +92,13 @@ main p{
     inline-size: 85%;
     overflow-wrap: break-word;
 }
-/* main style */
 
-/* section style */
+/* ?main? */
+
+/* ¿section¿ */
+
 section{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 5em;
 
@@ -124,57 +117,37 @@ section div ul li {
     inline-size: 85%;
 }
 
-/* section style */
+section .skills-col {
+				flex: 1;
+}
 
-/* footer style */
+section .languages-col{
+    flex: 1;
+}
+
+/* ?section? */
+
+/* ¿footer¿ */
+
 footer{
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
 }
-/* footer style */
-@media only screen and (min-width: 768px) {
 
-				.mobile-menu, .mobile-menu-exit {
-								display: none;
-				}
-				
-				header {
-								display: grid;
-								grid-template-columns: 180px auto;
-				}
-				
-				nav {
-								display: flex;
-								justify-content: space-between;
-								background: none;
-								position: unset;
-								height: auto;
-								width: 100%;
-								padding: 0;
-				}
-				
-				nav ul {
-								display: flex;
-								margin: 0;
-				}
-				
-				nav ul li a {
-								color: black;
-								font-size: 1.3rem;
-								padding: .1em 1em;
-				}
-				
-				nav ul li a:hover {
-				background: none;
-				text-decoration: underline;
-				}
-				
+footer span {
+				color: var(--primary-color);
+}
+
+/* ?footer? */
+
+@media only screen and (min-width: 680px) {
+
 				body {
-				margin: 1.5em 5em;
-				font-family: 'Poppins';
+								margin: 1.5em 5em;
 				}
 				
+				/* ¿font scale¿ */
 				.logo {
 								font-size: 1.5rem;
 				}
@@ -187,6 +160,62 @@ footer{
 				section div ul li {
 				font-size: 1.8rem;
 			}
+		
+			/* ?font scale? */
+}
+
+@media only screen and (min-width: 920px) {
+				
+				.menu {
+								display: none;
+				}
+				
+				nav {
+								transform: translateX(0);
+								position: unset;
+								display: block;
+								width: auto;
+								height: auto;
+								background: none;
+				}
+				
+				nav ul {
+								display: flex;
+								margin: 0;
+				}
+				
+				nav ul li a {
+								color: black;
+								padding: .5em 1.5em;
+								font-size: .9em;
+				}
+				
+				nav ul li a:hover {
+								background: none;
+								text-decoration: underline;
+				}
+				
+				.close {
+								display: none;
+				}
+				
+				/* ¿font scale¿ */
+				.logo {
+								font-size: 1.7rem;
+				}
+				body h1 {
+								font-size: 2.8rem;
+				}
+				body p {
+								font-size: 2rem;
+				}
+				section div ul li {
+								font-size: 2rem;
+			}
+			nav ul li a {
+							font-size: 1.3rem;
+			}
+			/* ?font scale? */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -196,19 +225,30 @@ footer{
 								margin: 0 auto;
 				}
 				
-				nav ul li a {
-								font-size: 1.7rem;
-				}
+				/* ¿font scale¿ */
 				.logo {
-								font-size: 1.9rem;
+								font-size: 2rem;
 				}
 				body h1 {
-								font-size: 3rem;
+								font-size: 3.1rem;
 				}
 				body p {
-								font-size: 2.2rem;
+								font-size: 2.3rem;
 				}
 				section div ul li {
-								font-size: 2.2rem;
-				}
+								font-size: 2.3rem;
+			}
+			nav ul li a {
+							font-size: 1.5rem;
+			}
+			/* ?font scale? */
 }
+
+
+
+
+
+
+
+
+
