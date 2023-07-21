@@ -16,7 +16,7 @@ I'm fluent in four languages and...">
 </head>
 <body>
 				<div class="container">
-				  <img class="up show" src="images/scrollup.svg" alt="">
+				 
 								<header>
 								<a class="logo" href="#">S.<span>HAMO</span></a>
 								
@@ -78,23 +78,7 @@ I'm fluent in four languages and...">
 											nav.classList.remove('open-nav')
 								})
 								
-								let img = document.querySelector(".up");
 								
-								window.onscroll = function () {
-												
-												if (this.scrollY >= 760) {
-																img.classList.add("show");
-												} else {
-																img.classList.remove("show");
-												}
-								}
-								
-								img.onclick = function () {
-												window.scrollTo ({
-																top: 0,
-																behavior: "smooth",
-												});
-								}
 				</script>
 </body>
 </html>
