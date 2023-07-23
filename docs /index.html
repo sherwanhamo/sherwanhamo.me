@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Hey, I'm Sherwan Hamo and I'm an 18-year-old student currently pursuing an apprenticeship as a cutting machine operator. 
+I'm fluent in four languages and...">
+    <meta name="keywords" content="Sherwan Hamo, sherwanhamo, contact@sherwan-hamo.me">
+    <meta name="author" content="Sherwan Hamo"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="theme-color" content="#31363E">
+  <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="logo" href="#"><span>S.</span>HAMO</a>
+      <img class="menu" src="images/menu.svg" alt="Open Menu" />
+      <nav>
+        <img class="close" src="images/close.svg" alt="Close Menu" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="https://github.com/sherwanhamo">Github</a></li>
+          <li><a class="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header> 
+    
+    <main>
+      <p>Hey, I'm</p>
+      <h1>Sherwan Hamo</h1>
+      <p>and I'm an 18-year-old student currently pursuing an apprenticeship as a cutting machine operator. I'm fluent in four languages and have gained valuable experience in machining through two years of school and workshop training. In my free time, you can find me playing chess, practicing graphic design, or programming video games and websites. Welcome to my personal website, where I share my journey and interests. </p>
+    </main>
+    
+    <section>
+      <div class="skills-col">
+        <h1>Skills</h1>
+        
+        <ul>
+          <li>Graphic Design</li>
+          <li>Web development(html,css)</li>
+          <li>Machining</li>
+          <li>Videogames development</li>
+        </ul>
+      </div>
+      <div class="languages-col">
+        <h1>Languages</h1>
+        
+        <ul>
+          <li>Kurdish</li>
+          <li>English</li>
+          <li>German</li>
+          <li>Arabic</li>
+        </ul>
+      </div>
+    </section>
+    
+    <footer>
+      <p>E-mail:<span>contact@sherwan-hamo.me</span></p>
+      <p> 2023 Sherwan Hamo All rights reserved</p>
+    </footer>
+  </div>
+  
+  <script>
+    const menu = document.querySelector('.menu')
+    const close = document.querySelector('.close')
+    const nav = document.querySelector('nav')
+    let scrolldown = document.querySelector('.contact')
+    
+    menu.addEventListener ('click', () => {
+      nav.classList.add('open-nav')
+    })
+    
+    close.addEventListener ('click', () => {
+      nav.classList.remove('open-nav')
+    })
+    
+    scrolldown.onclick = function() {
+      window.scrollTo ({
+        top:2000, behavior: "smooth",
+      })
+      nav.classList.remove('open-nav')
+    }
+  </script>
+</body>
+</html>
